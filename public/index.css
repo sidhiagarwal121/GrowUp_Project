@@ -1,0 +1,265 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+/* header css */
+header{
+    height:75px;
+   position:relative;
+  
+    display: flex;
+    
+    justify-content: space-between;
+    padding:30px;
+    font-size: 23px;
+    background-color:  #333;
+}
+header .logo
+ {
+    font-size: 33px;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+
+ }
+header .logo span{
+    color: rgb(27, 162, 224);
+
+  }
+
+header .navbar{
+    margin-left: 50px;
+    
+}
+
+header .navbar a{
+    text-decoration: none;
+    color:white;
+    margin:20px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+header .icon i{
+    color:rgb(12, 10, 10);
+    font-size: 20px;;
+}
+#login-btn{
+  color:white;
+  padding:10px;
+  margin-right: 50px;
+  font-size: 25px;
+  
+
+}
+.navbar a:hover{
+  color:rgb(15, 231, 177);
+  transition: 1s;
+  text-decoration: underline;
+}
+#login-btn:hover{
+  color:rgb(19, 200, 224);
+  transition: 1s;
+  
+}
+ .navbar #home{
+  color:rgb(15, 207, 191);
+  text-decoration: underline;
+
+}
+
+
+/* second header*/
+.searchbox{
+    height:75px;
+    width:100%;
+  display: flex;
+  justify-content: space-between;
+    background-color: #333;
+    padding:20px;
+    
+}
+.searchbox input{
+    background-color:white;
+    width:95%;
+    height:35px;
+    border-radius: 10px;
+    padding:20px;
+    font-size: 20px;
+    text-decoration: none;
+
+    
+}
+.section1{
+    height: 550px;
+    width: 100%;
+    /* background-image: url('./1575006797phpYpRn3w.jpeg'); */
+}
+.section1 img{
+    height: 550px;
+    width: 100%;
+}
+.main_heading{
+    margin-top: -377px;
+    margin-left: 130px;
+    font-size: 40px;
+}
+
+.button{
+    height: 45px;
+    width: 133px;
+    margin-left: 208px;
+    margin-top: 50px !important;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: rgb(138, 214, 224);
+    cursor: pointer;
+}
+.video{
+    margin-left: 850px;
+    margin-top: -400px;
+    /* border: 2px solid black; */
+}
+.section2{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+h5{
+    font-size: 25px;
+}
+.one{
+    display: flex;
+    margin-left: 45px;
+    margin-top: 32px;
+}
+.one h5{
+    margin-left: 5px;
+    color: rgb(12, 158, 216);
+    font-size: 35px;
+}
+.one span{
+    color: black;
+}
+.section3{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+ h1{
+    margin-left: 42%;
+    font-size: 45px;
+    margin-top: 44px;
+    /* height: 200px; */
+}
+.box{
+    display: flex;
+    height: 180px;
+    width: 350px;
+    background-color: black;
+    border-radius: 8px;
+    margin-top: 55px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s;
+}
+
+.box h2{
+   color: white;
+   margin-top: 50px;
+   margin-left: 15px;
+}
+.box img{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.box:hover{
+    background-color: rgb(145, 173, 184); 
+    cursor: pointer;
+}
+.section4{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.first
+{
+    height: 355px;
+    width: 300px;
+    border: 5px solid black;
+    margin-left: 90px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+.first p{
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.first img{
+    margin-left: 23px;
+    margin-top: 4px;
+}
+.first h3{
+    margin-top: 16px;
+    margin-left: 30px;
+}
+.bott{
+    display: flex;
+}
+.main2{
+display: flex;
+justify-content: space-around;
+background-color: #010001;
+color: white;
+margin-top: 125px;
+height: 380px;
+}
+.main2 .line1
+{
+    margin-top: 30px;
+    margin-right: -8px;
+}
+.main2 i{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 25px;
+}
+.main2 line2{
+    margin-left: -12px;
+    margin-top: -105px;
+}
+.main2 h3{
+    margin-top: 45px;
+}
+.main2 p:hover{
+    cursor: pointer;
+}
+
+.main2 div{
+    /* margin-top: 2px; */
+    font-size: 20px;
+}
+.main2 input{
+    border-radius: 5px;
+    padding: 5px;
+}
+.main2 button{
+    height: 23px;
+    width: 76px;
+    border-radius: 4px;
+    color: black;
+}
+.main2 button:hover{
+    background-color: #29d9d5;
+    color: rgb(15, 1, 1);
+}
+.main2 button{
+    color:#021111;
+    border: 1px solid #29d9d5;
+}

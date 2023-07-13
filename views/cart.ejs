@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin-left: 38%;
+        margin-top: 5%;
+    }
+    .order{
+        display: flex;
+    }
+    .order img{
+        height: 62px;
+        width: 62px;
+        border-radius: 50%;
+    }
+    .main img{
+        height: 85px;
+        width: 85px;
+        border-radius: 30%;
+        margin-right: 39%;
+        margin-top: 5%;
+    }
+    .container1 .main
+    {
+        justify-content: space-between;
+        
+        display: flex;
+    }
+    .container1{
+        border-radius: 6%;
+        margin-left: 16%;
+        width: 70%;
+        background-color: rgb(202, 199, 199);
+        justify-content: space-evenly;
+        display: flex;
+        
+    }
+    .btm{
+        margin-left: 70%;
+    }
+    .btm1{
+        display: flex;
+    }
+    #price{
+        color: orange;
+    }
+
+</style>
+<body>
+    <!-- <h1>your cart is empty.</h1> -->
+    <div class="container">
+        <div class="order">
+            <img src="../public/images/cart.webp" alt="..." >
+            <h1>Order summary</h1>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="main">
+            <img src="../public/images/c5.png" alt="">
+            <h1>Java Programming</h1>
+        </div>
+        <span><h1>₹450</h1></span>
+
+    </div>
+    <div class="btm">
+        <div class="btm1"> 
+            <span><h2>Total amount:</h2></span>
+            <span id="price"><h2>₹600</h2></span>
+        </div>
+    </div>
+</body>
+</html>

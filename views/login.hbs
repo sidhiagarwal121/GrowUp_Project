@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7eaaa8df92.js" crossorigin="anonymous"></script>
+    <style>
+        
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bgimg1.jpg"); 
+    background-size: cover; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{ 
+    color: black;
+    position: absolute;
+    top: 15%;
+    left: 35%; 
+    height: 425px;
+    width: 410px;
+    /* background:url('./bgimg.jpg'); */
+    border-radius: 34px;
+    background-color: rgba(41, 39, 39, 0.3);
+    
+    
+}
+.container h1{
+    font-family: 'Heebo', sans-serif;
+    width: 50%;
+    display: inline-block;
+    font-size: 40px;
+    /* border-bottom: 5px solid purple; */
+    margin-bottom: 15px;
+    padding: 13px 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+.box{
+    width: 100%; 
+    margin: 24px 0px;
+    border-bottom: 2px solid purple;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+.box input{  
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: black;
+}
+::placeholder{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.btn{
+    color: black;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 3px solid purple;
+    border-radius: 50px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.384);
+    margin-left: 20px;
+    width: 88%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.text-center{
+    margin-top: 550px;
+    margin-left: 40%;
+    color: rgb(248, 245, 245);
+    font-size: 22px;
+}
+.box i{ 
+    width: 25px; 
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.5;
+    color: purple; 
+    background: white; 
+    
+}
+.icons {
+    color: whitesmoke;
+    align-items: center;
+    margin-left: 78px;
+    margin-right: 28px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 58px;
+    margin-right: 35px;
+}
+.icons h2{
+    margin-left: 50px;
+
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+
+    </style>
+</head>
+<body>
+    <form action="/login" method="POST" >
+        <div class="container">
+        <h1>Log In</h1>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input  name="email" id="email" placeholder="Enter Your Email">
+         </div>
+    <div class="box">
+        <i class="fa fa-key"></i>
+        <input type="password" name="Pass" id="password" placeholder="Enter Your Password">
+    </div>
+    <button class="btn">Sign In</button>
+    
+    <div class="icons">
+        <h2>or signup using</h2>
+        <div class="logo">
+            <img src="fblogo.png" alt="no" height="34px" width="34px">
+            <img src="google.png" alt="no" height="34px" width="34px">
+            <img src="twiiter.png" alt="no" height="34px" width="34px">
+        </div>
+    </div>
+    </div>
+    </form>
+    <div class="text-center">Don't have an account? <a href="/index">Sign Up</a></div>
+    
+
+
+    
+    
+    {{!-- <img src="bgimg1.jpg"> --}}
+    
+</body>
+</html>

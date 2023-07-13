@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        .bottom{
+            margin-top: -12px;
+            margin-bottom: 42px;
+        }
+        .rev_cont{
+            height: 145px;
+            width: 145px;
+            margin-bottom: 45px;
+            margin-top: 45px;
+        }
+        .product_image{
+            display: flex;
+        }
+        .bottom{
+            display: flex;
+        }
+        #user{
+            color: rgb(2, 2, 10);
+            margin-left: 28px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            margin-top: 8px;
+        }
+        #date{
+            color: rgb(2, 2, 10);
+            margin-left: 50px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+        /* #main-review{
+            color: rgb(7, 6, 8);
+        } */
+
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="../public/design.css" /> -->
+</head>
+<body>
+    <div class="container container-fluid">
+        <div class="row f-flex justify-content-around">
+            <div class="col-12 col-lg-5 img-fluid" id="product_image">
+                <img src="/images/<%= product.image %>"alt="sdf" height="300" width="300" style="margin-top: 95px;margin-bottom:45px;">
+                <div class="main_container">
+                    <%for(let rev of product.reviews){%>
+                        <div class="card" style="width: 25rem; height: 10rem; margin-bottom: 12px; background-color: rgb(243, 241, 241);">
+                            <div class="card-body">
+                              <h5 class="card-title">⭐⭐⭐⭐</h5>
+                              <h2 class="card-subtitle mb-2 text-muted" id="main-review"><%=rev.review%></h2>
+                              <div class="bottom" style="margin-top: 12px;">
+                                <img src="https://www.shutterstock.com/image-vector/user-icon-trendy-flat-style-260nw-418179865.jpg" alt="" height="45px" width="45px" style="border-radius: 50%;" >
+                                <h2 id="user"><%=rev.author%></h2>
+                                <h7 id="date"><%= new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long', day: '2-digit'}).format(new Date()) %></h7>
+                               </div>
+                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                              <!-- <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a> -->
+                            </div>
+                        </div>
+                        <!-- <h2><%=rev.review%></h2> -->
+    
+                
+      
+                    <%}%>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 mt-5">
+                <h3 style="margin-top: -30px;"><%=product.name%></h3>
+                <p id="product_id"></p>
+
+                <hr>
+
+                <div class="rating-outer">
+                    <div class="rating-inner"></div>
+                </div>
+                <span id="no_of_reviews">(5 Reviews)</span>
+
+                <hr>
+
+                <p id="product_price"><h1>₹<%=product.price%></h1></p>
+                <div class="stockCounter d-inline">
+                    <span class="btn btn-danger minus">-</span>
+
+                    <input type="number" class="form-control count d-inline" value="1" style="margin-top: 12px;" readOnly />
+
+                    <span class="btn btn-primary plus" style="margin-top: 12px;">+</span>
+                </div>
+
+                 <button type="button" id="cart_btn" class="btn btn-primary d-inline ml-4" style="margin-top: 12px;">Add to Cart</button>
+
+                <hr>
+
+                <p>Status: <span id="stock_status">In Stock</span></p>
+
+                <hr>
+
+                <h4 class="mt-2">Description:</h4>
+                <p><%=product.detail%></p>
+                <hr>
+                <p id="product_seller mb-3">Sold by: <strong>Udemy</strong></p>
+                <div class="container">
+                    <form action="/views/productdetails/<%=product._id%>/reviews" method="post">
+                        <div class="review">
+                            <h3>Review</h3>
+                            <textarea id="review" cols="50" rows="5" name="review"></textarea>
+                            <input type="text" placeholder="enter your name" name="author">
+                        </div>
+                        <div class="bottom">
+                        <button id="review_btn" type="submit" class="btn btn-primary mt-4" data-toggle="modal" data-target="#ratingModal"  style="margin-top:2px">Submit Your Review</button>
+    
+                        </div>
+            
+            
+        
+                    </form>
+
+                </div>
+            <!-- <div class="rev_cont" style="height: 45px; width: 85px; margin-top: 12px; margin-bottom: 12px; background-color: rgb(175, 171, 171);">
+                  
+            <%for(let rev of product.reviews){%>
+                  <h2><%=rev.review%></h2>
+
+            <%}%>
+            </div> -->
+                
+                
+            </div>
+				
+				
+				
+					
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

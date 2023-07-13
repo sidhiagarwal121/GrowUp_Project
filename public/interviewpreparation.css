@@ -1,0 +1,209 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* background-color:lightgrey; */
+    
+}
+/* header css */
+header{
+    height:75px;
+   position:relative;
+  
+    display: flex;
+    
+    justify-content: space-between;
+    padding:30px;
+    font-size: 23px;
+    background-color:  #333;
+}
+header .navbar{
+    margin-left: -45px;
+    margin-top: -12px;
+    background-color:black !important;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color:white;
+    margin:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:black !important;
+
+   
+}
+.all{
+    background-color:lightgrey;
+    /* padding-top: -12px; */
+    height: 2600px;
+    margin-top: -45px;
+}
+.sect1{
+   padding-top: -12px;
+}
+.heading1{
+    font-size: 28px;
+    margin-top: 48px;
+    margin-left: 37%;
+    color: rgb(7, 58, 78);
+
+}
+.sect1 img{
+    height: 380px;
+    width: 880px;
+    margin-left: 20%;
+    margin-top: 56px;
+    border: 8px solid skyblue;
+}
+span{
+    margin-left: 14%;
+}
+.main1{
+    margin-top: 45px;
+}
+.main1 .one{
+    height: 445px;
+    width: 100%;
+    margin-left: 55px;
+    margin-top: 95px;
+    display: flex;
+}
+.main1 .one .left h1{
+    margin-left: 32%;
+}
+.main1 .one .left p{
+    margin-top: 12px;
+    font-size: 17px;
+}
+.main1 .one .left 
+{
+    height: 50px;
+    width: 50%;
+}
+.one .btn{
+    margin-top: 35px;
+    height: 45px;
+    width: 205px;
+    margin-left: 28%;
+    background-color:rgb(49, 178, 224);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 88px;
+    border: 3px solid black;
+}
+.btn:hover{
+    transform: scale(0.8,0.8);
+    -webkit-transform: scale(0.8,0.8);
+    -moz-transform: scale(0.8,0.8);
+    cursor: pointer;
+    
+}
+.main1 .one img{
+    margin-left: 85px;
+    margin-top: -87px;
+    border-radius: 65px;
+}
+.main1{
+    margin-top: 45px;
+}
+.main1 .two{
+    height: 445px;
+    width: 100%;
+    margin-left: 55px;
+    margin-top: 95px;
+    display: flex;
+}
+.main1 .two .left h1{
+    margin-left: 45%;
+}
+.main1 .two .left p{
+    margin-top: 20px;
+    font-size: 17px;
+    margin-left: 200px;
+}
+.main1 .two .left 
+{
+    height: 50px;
+    width: 50%;
+}
+.two .btn{
+    margin-top: 35px;
+    height: 45px;
+    width: 205px;
+    margin-left: 50%;
+    background-color:rgb(49, 178, 224);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 88px;
+    border: 3px solid black;
+}
+.btn:hover{
+    transform: scale(0.8,0.8);
+    -webkit-transform: scale(0.8,0.8);
+    -moz-transform: scale(0.8,0.8);
+    cursor: pointer;
+    
+}
+.main1 .two img{
+    margin-left: 65px;
+    margin-top: -47px;
+    border-radius: 45px;
+}
+footer{
+    margin-top: -45px;
+}
+
+.main2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #010001;
+    color: white;
+    margin-top: 0px;
+    height: 380px;
+    }
+.main2 .line1
+    {
+        margin-top: 30px;
+        margin-right: -8px;
+    }
+.main2 i{
+        margin-left: 12px;
+        margin-right: 12px;
+        font-size: 25px;
+    }
+.main2 line2{
+        margin-left: -12px;
+        margin-top: -105px;
+    }
+.main2 h3{
+        margin-top: 45px;
+    }
+.main2 p:hover{
+        cursor: pointer;
+    }
+    
+.main2 div{
+        /* margin-top: 2px; */
+        font-size: 20px;
+    }
+.main2 input{
+        border-radius: 5px;
+        padding: 5px;
+    }
+.main2 button{
+        height: 23px;
+        width: 76px;
+        border-radius: 4px;
+        color: black;
+    }
+.main2 button:hover{
+        background-color: #29d9d5;
+        color: rgb(15, 1, 1);
+    }
+.main2 button{
+        color:#021111;
+        border: 1px solid #29d9d5;
+}
+    
